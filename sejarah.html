@@ -44,15 +44,16 @@ body {
 	font-family: "Inter", sans-serif;
 	line-height: 1.5;
 	min-height: 100vh;
-	padding: 5rem 0;
+	/* padding: 5rem 0; */
 	font-size: clamp(1rem, 2.5vw, 1.125rem);
 }
 
 section {
 	width: 90%;
-	max-width: 1500px;
+	max-width: 100% ;
 	margin-left: auto;
 	margin-right: auto;
+  justify-content: center;
 	
 	& + section {
 		margin-top: 2.5em;
@@ -138,7 +139,7 @@ summary {
 	.plus {
 		color: #289672;
 	}
-
+}
 
 
 details {
@@ -219,16 +220,16 @@ dl {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav  ">
                 <li class="nav-item ">
-                  <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.html"> Beranda <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
                   <a class="nav-link" href="sejarah.html"> Sejarah </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="struktur.html"> Struktur</a>
+                  <a class="nav-link" href="galeri.html"> Galeri </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="galeri.html"> Galeri </a>
+                  <a class="nav-link" href="struktur.html"> Tim kami</a>
                 </li>
               </ul>
             </div>
@@ -243,28 +244,38 @@ dl {
   
 
   <section>
-    <h1>Latest Transactions</h1>
-    <h2>Today</h2>
+    <div class="container m-auto">
+    <h1 class="pt-5">Sejarah Pramuka</h1>
+    <h2></h2>
     <details>
       <summary>
         <div>
-          <span style="background-color: #f2dcbb;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor" viewBox="0 0 256 256">
+          <span>
+            <img src="images/logoTunas.svg" alt="" width="192" height="192" >
+            <!-- <svg xmlns="images/logoDA.svg" width="192" height="192" fill="currentColor" viewBox="0 0 256 256">
               <rect width="256" height="256" fill="none"></rect>
               <path d="M192,120h27.05573a8,8,0,0,0,7.15542-4.42229l18.40439-36.80878a8,8,0,0,0-3.18631-10.52366L192,40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
               <path d="M64,120H36.94427a8,8,0,0,1-7.15542-4.42229L11.38446,78.76893a8,8,0,0,1,3.18631-10.52366L64,40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
               <path d="M160,40a32,32,0,0,1-64,0H64V208a8,8,0,0,0,8,8H184a8,8,0,0,0,8-8V40Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
-            </svg>
+            </svg> -->
           </span>
           <h3>
-            <strong>Pelantikan Ambalan</strong>
+            <strong>Gerakan Pramuka</strong>
           </h3>
         </div>
       </summary>
       <div>
         <dl>
           <div>
-            <dd>Kegiatan Pelantikan Ambalan ini dilaksanakan pada tanggal 8 oktober 2023 yang bertujuan untuk melantik tamu penegak serta menerapkan adat-adat atau peraturan yang sudah diterapkan dibuku adat Ambalan.</dd>
+            <dd>  Gerakan Pramuka adalah organisasi pendidikan nonformal yang menyelenggarakan pendidikan kepanduan yang dilaksanakan di Indonesia. Kata Pramuka merupakan singkatan dari Praja Muda Karana, yang memiliki arti Orang Muda yang Suka Berkarya.
+
+              “Pramuka” merupakan sebutan bagi Anggota Gerakan Pramuka, yang meliputi;
+              
+              Pramuka Siaga (7-10 tahun),
+              Pramuka Penggalang (11-15 tahun),
+              Pramuka Penegak (16-20 tahun) dan
+              Pramuka Pandega (21-25 tahun).
+              Kelompok anggota yang lain disebut anggota dewasa. Sedangkan yang dimaksud “Kepramukaan” adalah proses pendidikan di luar lingkungan sekolah dan di luar lingkungan keluarga dalam bentuk kegiatan menarik, menyenangkan, sehat, teratur, terarah, praktis yang dilakukan di alam terbuka dengan Prinsip Dasar Kepramukaan dan Metode Kepramukaan, yang sasaran akhirnya pembentukan watak, akhlak dan budi pekerti luhur.</dd>
           </div>
   
   
@@ -275,24 +286,32 @@ dl {
       <summary>
         <div>
           <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor" viewBox="0 0 256 256">
+
+            <img src="images/wosm.png" alt=""  height="192"    >
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="currentColor" viewBox="0 0 256 256">
               <rect width="256" height="256" fill="none"></rect>
               <rect x="32" y="80" width="192" height="48" rx="7.99999" stroke-width="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" fill="none"></rect>
               <path d="M208,128v72a8,8,0,0,1-8,8H56a8,8,0,0,1-8-8V128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
               <line x1="128" y1="80" x2="128" y2="208" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
               <path d="M173.25483,68.68629C161.94113,80,128,80,128,80s0-33.94113,11.31371-45.25483a24,24,0,0,1,33.94112,33.94112Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
               <path d="M82.74517,68.68629C94.05887,80,128,80,128,80s0-33.94113-11.31371-45.25483A24,24,0,0,0,82.74517,68.68629Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
-            </svg>
+            </svg> -->
           </span>
           <h3>
-            <strong>Perkemahan Insan Kamila</strong>
+            <strong>Kepanduan Dunia</strong>
           </h3>
         </div>
       </summary>
       <div>
         <dl>
           <div>
-            <dt>adalah kegiatan perkemahan untuk para calon penegak yang bertujuan mempererat jiwa kebersamaan,membangun sikap  kemandirian,dan membentuk mental yang kuat dan tangguh</dt>
+            <dd>Kepanduan dunia berawal dari pemikiran seorang pemuda Inggris yang merangkum atau menulis pengalamannya saat bertugas di Afrika dan India. Pemuda tersebut adalah Lord Baden Powell of Giwell yang nama lengkapnya adalah Robert Stephenson Smyth Baden Powell namun lebih dikenal dengan Baden Powell saja.
+
+              Baden Powell lahir pada tanggal 22 Februari 1857 di London, ayahnya seorang Profesor Geometry di Universitas Oxfort, bernama Domine Baden Powell yang meninggal ketika Stephenson masih kecil. Baden Powell bergabung dengan pasukan Hussars ke 13 di India pada tahun 1876, kemudian dari tahun 1888 – 1895 Baden Powell sukses bertugas di India, Afganistan, Zulu, dan Ashanti.
+              
+              Semasa perang Boer Baden powell bertugas sebagai staff dari pasukan Kerajaan Inggris (1896 – 1897), menjadi kolonel pasukan berkuda di Afrika Selatan (Pengalaman terkepung oleh bangsa Boer di Kota Mafeking, Afsel selama 127 hari kekurangan makanan), kemudian mengalahkan bangsa Zulu di Afrika dan mengambil kalung manik kayu milik raja Dinizulu.
+              
+              Pengalamannya tersebut ia tulis menjadi sebuah buku dengan judul “ AIDS TO SCOUTING “ yang sebenarnya untuk memberi petunjuk kepada tentara Inggris agar dapat melakukan tugas penyelidik dengan baik. </dd>
             
           </div>
         </dl>
@@ -302,7 +321,8 @@ dl {
       <summary>
         <div>
           <span style="background-color: #e0ece4;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000" viewBox="0 0 256 256">
+            <img src="images/logoDA.svg" alt=""   height="192">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000" viewBox="0 0 256 256">
               <rect width="256" height="256" fill="none"></rect>
               <line x1="88" y1="24" x2="88" y2="56" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
               <line x1="120" y1="24" x2="120" y2="56" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
@@ -310,10 +330,10 @@ dl {
               <line x1="32" y1="216" x2="208" y2="216" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
               <path d="M83.29651,216.0038A88.01441,88.01441,0,0,1,32,136V88H208v48a88.0144,88.0144,0,0,1-51.29712,80.00408" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
               <path d="M208,88h0a32,32,0,0,1,32,32V128a32,32,0,0,1-32,32h-3.37846" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
-            </svg>
+            </svg> -->
           </span>
           <h3>
-            <strong>Estafet Tunas Kelapa</strong>
+            <strong>Ambalan Walangsungsang dan Rarasantang</strong>
             
           </h3>
         
@@ -322,14 +342,27 @@ dl {
       <div>
         <dl>
           <div>
-            <dt>kegiatan ini adalah tradisi setiap Tahun yang perlu dipertahankan sebagai alat untuk mencapai tujuan Gerakan Pramuka yaitu membentuk manusia yang berkarakter dan berbudi pekerti luhur sebagai warga negara Republik Indonesia yang berjiwa Pancasila.</dt>
+            <dd>Pramuka SMK AL-IRSYAD Pertama kali didirikan pada tahun 2010
+              Terdaftar di Kwarcab pada tahun 2012, Sekaligus Mengusulkan Nomor Gudep 03.063 untuk putra dan 03.064 untuk Putri. 
+              Pada Tahun 2023, berganti menjadi 03.083 untuk Putra dan 03.084 untuk putri. <br>
+              Walangsungsang <br>
+              Diambil dari nama seorang pangeran yang bernama Raden Walangsungsang atau Pangeran Cakrabuwana yang merupakan putra  dari Prabu Siliwangi, Raja Pajajaran.
+Maksud pemilihan nama Walangsungsang sebagai simbol ambalan, adalah dengan harapan para Pramuka Penegak putra SMK  AL – Irsyad Kota Tegal memiliki jiwa setangguh dan sesederhana Raden Walangsungsang yang tidak mudah memilih maupun menerima sebuah tawaran, tapi melalui proses pembuktian diri kepada atasan
+              <br>
+              Rarasantang <br>
+              Diambil dari nama adik Raden Walangsungsang yaitu Nyi Mas Rarasantang atau Nyai Hajjah Syarifah Mudhaim
+Maksud pemilihan nama Rarasantang sebagai nama Ambalan adalah karena Rarasantang merupakan sosok wanita yang  cerdas, dan bijaksana. 
+Pangkalan SMK Al - Irsyad Kota Tegal menginginkan adanya karakter Nyi Mas Rarasantang muda dalam diri Pramuka Penegak Putri SMK Al – Irsyad Kota Tegal yang memiliki pemikiran cerdas, berkembang, dan matang yang melalui pertimbangan-pertimbangan logis bukan hanya berdasarkan perasaan belaka.
+
+              
+              </dd>
           </div>
         </dl>
       </div>
     </details>
     <details>
       <summary>
-        <div>
+        <!-- <div>
           <span>
   <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle><g><path d="M179.1333,108.32931a112.19069,112.19069,0,0,0-102.3584.04859" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><path d="M164.29541,136.71457a79.94058,79.94058,0,0,0-72.68359.04736" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><path d="M149.47217,165.07248a47.97816,47.97816,0,0,0-43.03662.04736" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></g></svg>
           </span>
@@ -357,11 +390,166 @@ dl {
             <dd>3125-568915</dd>
           </div>
         </dl>
-      </div>
+      </div> -->
     </details>
+  </div>
   </section>
 
-  
+ <!-- end client section -->
+
+  <!-- info section -->
+
+  <section class="info_section ">
+    <div class="info_container layout_padding2">
+      <div class="container">
+        <div class="info_logo">
+          <a class="navbar-brand" href="index.html"> Pramuka<span> SMK<span> AL-IRSYAD</span> </a>
+        </div>
+        <div class="info_main">
+          <div class="row">
+            <div class="col-md-3 col-lg-2">
+              <div class="info_link-box">
+                <h5>
+                  PINTASAN
+                </h5>
+                <ul>
+                  <li class=" active">
+                    <a class="" href="index.html"> Beranda <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="">
+                    <a class="" href="service.html"> Sejarah </a>
+                  </li>
+                  <li class="">
+                    <a class="" href="portfolio.html"> Struktur </a>
+                  </li>
+                  <li class="">
+                    <a class="" href="contact.html"> Galeri </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 mx-auto  " align="center">
+              <h5 align="center">
+                Team
+              </h5>
+              <div ><ul>
+                <li class=" active">
+                  <a class="" href="https://instagram.com/fchrialftih?igshid=OGQ5ZDc2ODk2ZA=="> Fachri <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="">
+                  <a class="" href="https://instagram.com/ixqlms?igshid=MzRlODBiNWFlZA=="> Iqbal </a>
+                </li>
+                <li class="">
+                  <a class="" href="https://instagram.com/rdtyaatm_?igshid=MzRlODBiNWFlZA=="> Radit </a>
+                </li>
+                <li class="">
+                  <a class="" href="https://instagram.com/rendi.9566?igshid=MzRlODBiNWFlZA=="> Rendi </a>
+                </li>
+                <li class="">
+                  <a class="" href="http://wa.me/085842112293"> Adi </a>
+                </li>
+                <li class="">
+                </li>
+              </ul>
+              </div>
+            </div>
+            <div class="col-md-3 mx-auto  " align="center">
+              <h5 align="center">
+                sosial media
+              </h5>
+              <div class="social_box" align="center">
+                <a href="https://www.instagram.com/pramukasmkalirsyad/?igshid=MzRlODBiNWFlZA%3D%3D">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.youtube.com/@pramukasmkalirsyadtegal2536">
+                  <i class="fa fa-youtube" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h5>
+                Alamat Kami
+              </h5>
+              <p>
+                Jl. Gelatik No.3, Randugunting, 
+                Kec. Tegal Sel., Kota Tegal, Jawa Tengah 52131
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="info_bottom">
+          <div class="row">
+            <div class="col-lg-9">
+              <div class="info_contact " align="center">
+                <div class="row">
+                  <div class="col-md-3">
+                    <a href="https://maps.app.goo.gl/Kwj5whEc2zjhbLmc9" class="link-box">
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      <span>
+                        Lokasi
+                      </span>
+                    </a>
+                  </div>
+                  <div class="col-md-5">
+                    <a href="https://wa.me/083123597580" class="link-box">
+                      <i class="fa fa-phone" aria-hidden="true"></i>
+                      <span>
+                        Call : Luqman
+                      </span>
+                    </a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="#" class="link-box">
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                      <span>
+                        smkalirtgl@gmail.com
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="info_form ">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span>
+        <a>SMK AL-IRSYAD Kota Tegal</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!--  OwlCarousel 2 - Filter -->
+  <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+  <!-- End Google Map -->
+
 </body>
 
 </html>
